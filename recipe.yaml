@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+
+context:
+  name: return_foo
+  version: 0.0.1
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/jackos/return-foo.git
+  # url: https://github.com/jackos//archive/${{ version }}.tar.gz
+
+about:
+  homepage: https://github.com/jackos/return-foo
+  summary: Testing Mojo packages
+  description: Testing Mojo packages
+  documentation: https://github.com/jackos/return-foo
+  repository: https://github.com/jackos/return-foo
+
+extra:
+  recipe-maintainers:
+    - jackos
