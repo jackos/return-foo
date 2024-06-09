@@ -2,11 +2,15 @@
 
 package:
   name: return_foo
-  version: 0.0.5
+  version: 0.0.6
 
 source:
   git: https://github.com/jackos/return-foo.git
-  
+
+build:
+  script:
+    cp return_foo.mojo $PREFIX
+    
 about:
   summary: Testing Mojo packages
   repository: https://github.com/jackos/return-foo
