@@ -2,16 +2,17 @@
 
 context:
   name: return_foo
-  version: 0.0.1
+  version: 0.0.4
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://github.com/jackos/return-foo.git
-  # url: https://github.com/jackos//archive/${{ version }}.tar.gz
-
+  # url: https://github.com/jackos/return-foo/archive/${{ version }}.tar.gz
+  url: https://github.com/jackos/return-foo/archive/0.0.1.tar.gz
+  sha256: 8058218cae5e5a2e573f7c729772723fa4ed42f844e5ea599946bfda87ff7b31
+  
 about:
   homepage: https://github.com/jackos/return-foo
   summary: Testing Mojo packages
@@ -21,4 +22,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - jackos
+    - jackclayton
